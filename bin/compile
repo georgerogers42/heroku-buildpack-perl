@@ -56,8 +56,9 @@ echo "-----> Installing dependencies with Carton"
 carton install --deployment 2>&1 | indent
 
 # TODO support different server type via Procfile
-echo "-----> Installing Starman"
-cpanm Starman 2>&1 | indent
+echo "-----> Installing Twiggy"
+cpanm EV 2>&1 | indent
+cpanm Twiggy 2>&1 | indent
 
 fixin_shebang
 
